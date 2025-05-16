@@ -1,12 +1,15 @@
-# EX 4C DYNAMIC PROGRAMMING – 3
+# EX:4C - DYNAMIC PROGRAMMING – 3
 ## DATE:
+
 ## AIM:
+
 Given a sequence, find the length of the longest palindromic subsequence in it.
 
 ## Algorithm
 
 1. Create a 2D dp table of size (n+1) x (n+1) initialized to -1 to store intermediate results for overlapping subproblems.
-2. Use the lps() function to compute the LPS length by treating it as a Longest Common Subsequence (LCS) problem between the original string (s1) and its reverse (s2).
+2. Use the lps() function to compute the LPS length by treating it as a Longest Common Subsequence (LCS) problem between the original string (s1) and its reverse 
+   (s2).
 3. If the characters match, increment the length and move both pointers.
 4. If the characters do not match, take the maximum length by either moving the first or the second pointer backward.
 5. If the result for a given subproblem is already computed (i.e., dp[n1][n2] != -1), return the stored value to avoid redundant calculations.
@@ -14,10 +17,13 @@ Given a sequence, find the length of the longest palindromic subsequence in it.
 
 ## Program:
 ```
-/*
 Program to implement to find the length of the longest palindromic subsequence in it
-*/
 
+DEVELOPED BY    : NIRAUNJANA GAYATHRI G R
+REGISTER NUMBER : 212222230096
+
+```
+```
 dp = [[-1 for i in range(1001)]for j in range(1001)]
 def lps(s1, s2, n1, n2):
     if (n1 == 0 or n2 == 0):
@@ -37,10 +43,6 @@ s2 = seq
 s2 = s2[::-1]
 print(f"The length of the LPS is",lps(s2, seq, n, n))
 
-/*
-Developed by: Ann Blessy Philips
-Register Number: 212222040008
-*/
 ```
 
 ## Output:
@@ -49,4 +51,5 @@ Register Number: 212222040008
 
 
 ## Result:
+
 Thus the program was executed successfully for finding the length of longest palindromic string.
