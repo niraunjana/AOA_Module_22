@@ -1,9 +1,12 @@
-# EX 4D DYNAMIC PROGRAMMING – 4
+# EX:4D - DYNAMIC PROGRAMMING – 4
 ## DATE:
+
 ## AIM:
+
 To find the minimum number of operations to convert str1 to str2 using Naive recursive method.
 
 ## Algorithm
+
 1. If one of the strings is empty, the edit distance is the length of the other string (all insertions or deletions).
 2. If the last characters of both strings match, no additional cost is needed for this position, so set count = 0.
 3. If they do not match, set count = 1 to account for the replacement cost.
@@ -15,13 +18,16 @@ To find the minimum number of operations to convert str1 to str2 using Naive rec
 
 
 ## Program:
-```
-/*
-Program to implement to find the minimum number of operations to convert str1 to str2 using Naive recursive method
-*/
 
+```
+Program to implement to find the minimum number of operations to convert str1 to str2 using Naive recursive method
+
+DEVELOPED BY    : NIRAUNJANA GAYATHRI G R
+REGISTER NUMBER : 212222230096
+
+```
+```
 def LD(s, t):
-    #########  Add your code here ###########
     if s=="":
         return len(t)
     if t=="":
@@ -38,10 +44,6 @@ str1=input()
 str2=input()
 print('No. of Operations required :',LD(str1,str2))
 
-/*
-Developed by: Ann Blessy Philips
-Register Number: 212222040008
-*/
 ```
 
 ## Output:
@@ -49,4 +51,5 @@ Register Number: 212222040008
 ![image](https://github.com/user-attachments/assets/98085c84-83c8-40d4-9aed-3f606611ef30)
 
 ## Result:
+
 Thus the program was executed successfully for finding edit distance between two strings.
