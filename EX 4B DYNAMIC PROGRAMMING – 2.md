@@ -1,11 +1,12 @@
-# EX 4B DYNAMIC PROGRAMMING – 2
+# EX:4B - DYNAMIC PROGRAMMING – 2
 ## DATE:
+
 ## AIM:
+
 To find the longest string (or strings) that is a substring (or are substrings) of two strings..
 
-
-
 ## Algorithm
+
 1. Create a 2D table dp of size (m+1) x (n+1), where m is the length of the first string and n is the length of the second string. Set all elements to 0 initially.
 2. Track the maximum length of the common substring (max) and its ending position (end).
 3. For each character pair (x[i-1], y[j-1]) in the two strings, if they match, update dp[i][j] to dp[i-1][j-1] + 1.
@@ -14,10 +15,12 @@ To find the longest string (or strings) that is a substring (or are substrings) 
 
 ## Program:
 ```
-/*
 Program to implement the longest common substring problem
-*/
 
+DEVELOPED BY    : NIRAUNJANA GAYATHRI G R
+REGISTER NUMBER : 212222230096
+```
+```
 def lcs(x,y):
     m=len(x)
     n=len(y)
@@ -37,10 +40,6 @@ s1=input()
 s2=input()
 print("The longest common substring is",(lcs(s1,s2)))
 
-/*
-Developed by: Ann Blessy Philips
-Register Number: 212222040008
-*/
 ```
 
 ## Output:
@@ -48,4 +47,5 @@ Register Number: 212222040008
 ![image](https://github.com/user-attachments/assets/aada1624-d79b-498c-bac8-d6e1806ced26)
 
 ## Result:
+
 Thus the program was executed successfully for finding the longest common substring .
